@@ -5,20 +5,24 @@
 <template>
     <div class="main-container">
         <div class="my-content">
-            Mio contenuto
+            <h2>
+            &RightArrow; Content goes here &LeftArrow;
+            </h2>
         </div>
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
 .main-container {
-
+background-color: $primary-bg-color;
 }
 .my-content {
     width: 80%;
     margin: 0 auto;
-    border: 1px solid black;
-    height: 200px;
+    color: white;
+    padding: 3rem 0;
+    font-weight: bold;
 }
 
 </style>
