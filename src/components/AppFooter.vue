@@ -138,22 +138,49 @@ export default {
                 </div>
 
             </nav>
+            <img src="../assets/img/dc-logo-bg.png" alt="logo dc background">
         </div>
     </div>
 
     <div class="bottom-container">
         <div class="my-footer-login">
-            <a href="#"> Sign-up button </a>
+            <div class="my-btn">
+                <a href="#"> Sign-up Now!</a>
+            </div>
+            
             <ul>
                 <li>
-                    Lista Social Media
+                    <h1>Follow Us</h1>
                 </li>
+                
+                <li>
+                    <img src="../assets/img/footer-facebook.png" alt="facebook icon">
+                </li>
+
+                <li>
+                    <img src="../assets/img/footer-twitter.png" alt="twitter icon">
+                </li>
+
+                <li>
+                    <img src="../assets/img/footer-youtube.png" alt="youtube icon">
+                </li>
+
+                <li>
+                    <img src="../assets/img/footer-pinterest.png" alt="pinterest icon">
+                </li>
+
+                <li>
+                    <img src="../assets/img/footer-periscope.png" alt="maps icon">
+                </li>
+                
             </ul>
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+
     * {
         color: white;
     }
@@ -191,18 +218,47 @@ export default {
 
     .bottom-container {
         background-color: #303030;
-        height: 200px;
     }
 
     .my-footer-menu {
         width: 80%;
         margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        
+        img {
+           object-fit: cover;
+           max-height: 400px;
+        }
     }
     .my-footer-login {
         width: 80%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        padding: 4rem 0;
+
+        .my-btn a {
+            border: 3px solid $main-color;
+            padding: 1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            color: $main-color;
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                padding: 0 .5rem;
+            }
+        }
+    
     };
 
 

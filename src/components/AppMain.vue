@@ -6,7 +6,7 @@
     <div class="main-container">
         <div class="my-content">
             <h2>
-            &RightArrow; Content goes here &LeftArrow;
+                &RightArrow; Content goes here &LeftArrow;
             </h2>
         </div>
     </div>
@@ -23,6 +23,10 @@ background-color: $primary-bg-color;
     color: white;
     padding: 3rem 0;
     font-weight: bold;
+
+    h2 {
+        font-size: 2rem;
+    }
 }
 
 </style>
