@@ -59,7 +59,7 @@ export default {
     <nav>
       <ul>
         <li v-for="item in navItems" :class="(item.active) ? 'active' : ''">
-        <a href="#">{{ item.text }}</a>
+          <a href="#">{{ item.text }}</a>
         </li>
       </ul>
     </nav>
@@ -69,17 +69,17 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
  .header-container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
  }
 
  img {
-  padding: 1rem 1rem;
-  width: 80%;
- }
+    padding: 1rem 1rem;
+    width: 80%;
+  }
 
  nav ul {
     display: flex;
@@ -92,6 +92,7 @@ export default {
       &.active,
       &:hover {
         color: $main-color;
+        border-bottom: 2px solid $main-color;
       } 
       }
     }

@@ -122,7 +122,7 @@ export default {
         width: 70%;
         margin: auto;
         padding-top: 24rem;
-        
+
             a {
             background-color: $main-color;
             color: white;
@@ -164,6 +164,7 @@ export default {
     .product-wrapper {
         display: flex;
         flex-wrap: wrap;
+        padding-bottom: 2rem;
     }
 }
 

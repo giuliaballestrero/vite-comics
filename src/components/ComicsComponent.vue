@@ -10,7 +10,7 @@ export default {
 <template>
     <div class="comics-element">
         <img :src="img" :alt="title">
-        <h4>{{ title }}</h4>
+        <h5>{{ title }}</h5>
     </div>
 </template>
 
@@ -18,16 +18,17 @@ export default {
 @use '../styles/partials/variables' as *;
 
 .comics-element {
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 1rem);
     padding: 1rem;
 
-    h4 {
+    h5 {
         padding: .5rem 0;
         text-transform: uppercase;
     }
 
     img {
     object-fit: cover;
+    object-position: top;
     width: 180px;
     height: 180px;
 }
