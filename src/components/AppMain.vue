@@ -94,11 +94,14 @@ export default {
     </div>
     <div class="main-container">
         <div class="my-content">
+
             <div class="product-wrapper">
                <ComicsComponent v-for="comic in comicsList"
                :img="comic.thumb"
                :title="comic.series" /> 
             </div>
+
+            <div class="my-btn"><a href="#">Load More</a></div>
         </div>
     </div>
 </template>
@@ -112,10 +115,10 @@ export default {
     background-size: cover;
 }
 .main-container {
-background-color: $primary-bg-color;
+    background-color: $primary-bg-color;
 }
 .my-content {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     color: white;
     padding: 3rem 0;
@@ -123,6 +126,25 @@ background-color: $primary-bg-color;
 
     h2 {
         font-size: 2rem;
+    }
+
+    .my-btn {
+        text-align: center;
+
+        a {
+        background-color: $main-color;
+        color: white;
+        padding: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: .7rem 3rem;
+        }
+
+    }
+
+    .product-wrapper {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
