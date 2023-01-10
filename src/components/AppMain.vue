@@ -90,7 +90,9 @@ export default {
 
 <template>
     <div class="jumbo-container">
-
+        <div class="my-btn">
+            <a href="#">Current Series</a>
+        </div>
     </div>
     <div class="main-container">
         <div class="my-content">
@@ -101,7 +103,9 @@ export default {
                :title="comic.series" /> 
             </div>
 
-            <div class="my-btn"><a href="#">Load More</a></div>
+            <div class="my-btn">
+                <a href="#">Load More</a>
+            </div>
         </div>
     </div>
 </template>
@@ -113,6 +117,22 @@ export default {
     height: 400px;
     background-image: url(../assets/img/jumbotron.jpg);
     background-size: cover;
+
+    .my-btn {
+        width: 70%;
+        margin: auto;
+        padding-top: 24rem;
+        
+            a {
+            background-color: $main-color;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 1rem 1.5rem;
+            }
+
+    }
 }
 .main-container {
     background-color: $primary-bg-color;
@@ -134,7 +154,6 @@ export default {
         a {
         background-color: $main-color;
         color: white;
-        padding: 1rem;
         text-transform: uppercase;
         font-weight: bold;
         padding: .7rem 3rem;

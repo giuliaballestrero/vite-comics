@@ -22,7 +22,7 @@ export default {
     padding: 1rem;
 
     h4 {
-        padding: 1rem 0;
+        padding: .5rem 0;
         text-transform: uppercase;
     }
 
