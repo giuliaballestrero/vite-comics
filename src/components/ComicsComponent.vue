@@ -1,12 +1,16 @@
 <script>
 export default {
-    
+    props: {
+        img: String,
+        title: String
+    }
 }
 </script>
 
 <template>
     <div>
-        <h1>Nuovo component</h1>
+        <img :src="img" :alt="title">
+        <h3>{{ title }}</h3>
     </div>
 </template>
 
